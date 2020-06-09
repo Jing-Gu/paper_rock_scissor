@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper scissor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="score">
+      <div class="score-board player-score">
+        <h2>Player Score</h2>
+        <p>0</p>
+      </div>
+      <div class="score-board computer-score">
+        <h2>Computer Score</h2>
+        <p>0</p>
+      </div>
+    </section>
+
+    <section class="game">
+      <div class="intro">
+        <h1>Rock, Paper & Scissors</h1>
+        <button>Let's play</button>
+      </div>
+
+      <div class="match fadeOut">
+        <h1 class="winner-msg">choose an option</h1>
+        <div class="hands">
+          <img class="player-hand" src="images/rock.png" alt="" />
+          <img class="computer-hand" src="images/rock.png" alt="" />
+        </div>
+        <div class="options">
+          <button class="rock">ROCK</button>
+          <button class="paper">PAPER</button>
+          <button class="scissors">SCISSORS</button>
+        </div>
+      </div>
+
+      <div class="restart">
+        <button class="restart-btn">Restart game</button>
+      </div>
+
+      <audio class="btn-click">
+        <source src="sounds/Button-click-sound-effect.mp3" />
+      </audio>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
